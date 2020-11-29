@@ -1,0 +1,230 @@
+.background {
+    background-image: url(../img/bruce.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 566px;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+.nav img {
+    display: none;
+}
+
+.nav .col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    margin: auto 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.nav li a:hover {
+    text-decoration: none;
+    background-color: #28A745;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.head {
+    text-align: left;
+    color: white;
+    margin-top: 200px;
+}
+
+.about {
+    margin-top: 300px;
+}
+
+.about .row {
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+}
+
+.about img {
+    float: left;
+}
+
+.about h5 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.services .row .col-sm-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.services-done {
+    height: 300px;
+    background-image: url(../img/marvin.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    background-image: url(../img/marvin.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+.footer {
+    height: 60px;
+}
+
+.footer h6 {
+    color: white;
+}
+
+/* SCREEN */
+@media (max-width: 1024px) {
+    .background {
+        background-size: contain;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    .background {
+        background-attachment: scroll;
+    }
+
+    .nav {
+        overflow: hidden;
+    }
+
+    .nav:hover {
+        height: 350px;
+        transition: 0.7s;
+    }
+
+    .nav img {
+        display: inline;
+        float: right;
+    }
+
+    .nav li {
+        height: 50px;
+    }
+
+    .nav li a:hover {
+        background-color: transparent;
+    }
+
+    .nav .col {
+        display: block;
+    }
+
+    .nav ul {
+        display: block;
+        float: left;
+        margin: 30px auto;
+    }
+
+    .nav h1 {
+        font-size: 2.3em;
+    }
+
+    .nav img {
+        width: 40px;
+        height: 40px;
+        margin-top: 6px;
+    }
+
+    .about {
+        margin-top: 230px;
+    }
+
+    .about img {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .about h5 {
+        margin-top: 30px;
+    }
+
+    .services .col {
+        margin: auto 10px;
+    }
+}
+
+/* SMARTPHONE */
+@media (max-width: 500px) {
+    .background {
+        margin-top: 17px;
+    }
+
+    .nav {
+        height: 40px;
+    }
+
+    .nav h1 {
+        font-size: 1.5em;
+    }
+
+    .nav img {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+
+    .head {
+        display: block;
+        margin-top: 115px;
+    }
+
+    .head h3 {
+        font-size: 1em;
+    }
+
+    .head h1 {
+        font-size: 1.5em;
+    }
+
+    .about {
+        margin-top: 130px;
+    }
+
+    #about-p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .services-done {
+        height: 550px;
+    }
+
+    .services .col-sm-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact {
+        height: 950px;
+    }
+
+    .footer a img {
+        display: none;
+    }
+}
